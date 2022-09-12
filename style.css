@@ -1,0 +1,74 @@
+html{
+   box-sizing: border-box;
+   user-select: none;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+   width: 700px;
+   background-color: rgb(200, 195, 203);
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   font-weight: 500;
+   color: rgb(244, 171, 77);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+
+.container{
+   width: 100%;
+   margin: 17% auto;
+   padding: 15px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 1px 4px 0 rgba(0, 0 , 0, .9);
+}
+h1{
+   font-size: 30px;
+   font-weight: 700;
+   text-align: center;
+   margin: 10px 0 20px;
+}
+textarea{
+   width: 100%;
+   height: 200px;
+   padding: 10px;
+   border: 1px solid #d9d9d9;
+   outline: none;
+   font-size: 16px;
+   line-height: 18px;
+}
+textarea:hover{
+   border-color: #c0c0c0;
+}
+textarea:focus{
+   border-color: #4d90fe;
+}
+
+.output.row{
+   width: 100%;
+   border: 1px solid #ddd;
+   background-color: #f9f9f9;
+   font-size: 15px;
+   margin: 10px 0;
+}
+.output.row div{
+   display: inline-block;
+   margin: 10px;
+   padding: 8px 8px;
+   width: 50%;
+}
+.output.row span{
+   font-weight: bold;
+   font-size: 15px;
+}
+@media (min-width:280px) and (max-width:950px){
+   .container{
+      width: 50%;
+   }
+}
